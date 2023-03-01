@@ -1,5 +1,0 @@
-SELECT ep.prono, sum(ep.hours)
-FROM emp e JOIN emppro ep ON e.empno = ep.empno
-WHERE e.sal >= 1000
-GROUP BY ep.prono
-HAVING count(*)>=2
